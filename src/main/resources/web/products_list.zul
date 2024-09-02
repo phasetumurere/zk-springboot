@@ -1,0 +1,25 @@
+    <window title="Product List" border="normal" viewModel="@id('vm') @init('com.phase.zk.demo.views.ProductViewModel')">
+
+    <grid model="@load(vm.product )" emptyMessage="No products available">
+        <columns>
+            <column label="ID"/>
+            <column label="Name"/>
+            <column label="Price"/>
+            <column label="Description"/>
+        </columns>
+        <rows>
+            <row self="@each">
+                <label value="@load(each.id)"/>
+                <label value="@load(each.name)"/>
+                <label value="@load(each.price)"/>
+                <label value="@load(each.description)"/>
+            </row>
+<!--            <row >-->
+<!--                <label value="1"/>-->
+<!--                <label value="Kwizera"/>-->
+<!--                <label value="12"/>-->
+<!--                <label value="Niyo yasknsfdlklkdfjdf sdjsjhajhd djjkff"/>-->
+<!--            </row>-->
+        </rows>
+    </grid>
+</window>

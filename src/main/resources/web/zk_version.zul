@@ -1,0 +1,17 @@
+<zk xmlns:n="native">
+    <n:style src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" />
+
+    <window title="ZK with Bootstrap" style="text-align:center;" border="normal" width="400px" position="center" mode="modal">
+        <vlayout spacing="10px" >
+            <button label="Bootstrap Styled Button" sclass="btn btn-primary"/>
+            <label value="This is styled with Bootstrap!" sclass="text-success"/>
+        </vlayout>
+    </window>
+</zk>
+
+        <!--<zk>-->
+        <!--    What's your name: <textbox id="demoInput"/>-->
+        <!--    <button id="demoButton" label="Submit" onClick='demoLabel.setValue("Hello " + demoInput.getValue() + "!")'/>-->
+        <!--    <separator/>-->
+        <!--    <label id="demoLabel"/>-->
+        <!--</zk>-->
